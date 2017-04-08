@@ -20,6 +20,9 @@ function muestraPantallaPrincipal(){
 		protocol: 'file',
 		slashes: true
 	}))
+	//Abre la pantalla de Inspección, donde se encuentra
+	//la consola de Chrome dentro de electron.
+	PantallaPrincipal.webContents.openDevTools();
 	PantallaPrincipal.show()
 }
 
